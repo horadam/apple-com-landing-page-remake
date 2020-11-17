@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import AdBar from './components/AdBar'
+import FutureOfMac from './components/FutureOfMac'
+import SmallChip from './components/SmallChip'
+import MacAir from './components/MacAir'
+import MacPro from './components/MacPro'
+import MacMini from './components/MacMini'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <AdBar />
+      <FutureOfMac />
+      <SmallChip />
+      <MacAir />
+      <MacPro />
+      <MacMini />
+      <Footer />
     </div>
   );
 }
