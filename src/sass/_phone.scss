@@ -231,63 +231,54 @@ body {
 				justify-content: space-between;
 			  	font-weight: normal;
 				  cursor: pointer;
-				  border-bottom: $borderGrey;
-				  padding: 10px 5px 10px 0;
+				  padding: 9px 5px 8px 0;
 			}
 
 			.plusSign {
 				display: inline;
+				transition: transform 400ms;
+				font-size: 14px;
+			}
+
+			.plusSignRotated {
+				transform: rotate(45deg);
+				transition: transform 400ms;
+				font-size: 14px;
 			}
 
 	  
 			.listColumnFooterNav {
-				display: none;
-			//   list-style: none;
-			//   padding: 0;
-			//   line-height: 25px;
-			//   border-bottom: 1px solid rgb(66, 66, 69);
-			// //   height: 300px;
-			// //   transition: 1000ms ease-in;
-			// 	margin-top: 0;
-			// 	transition: margin-top 1000ms;
-			// 	overflow: hidden;
+				height: auto;
+				transition: height 300ms;
 			}
 
-			.fotterListWrapper {
-				padding-bottom: 0px;
-				transition: padding-bottom 1000ms;
-				display: none;
+			.footerListWrapper {
+				border-bottom: $borderGrey;
+				padding-bottom: 5px;
 			}
 
 			.hiddenWrapper {
 				height: 1px;
 				overflow: hidden;
 				border-bottom: $borderGrey;
-				margin-bottom: 10px;
-				padding-bottom: 150px;
 			}
 
 			.hiddenUl {
-				margin-top: -150px;
 				overflow: none;
-				// transition: padding-bottom 1000ms;
 			}
 
 			.hidden {
 				height: 0px;
 				overflow: hidden;
-				// border-bottom: 1px solid rgb(66, 66, 69);
-				// padding-bottom: 30px;
-				// transition: top 1000ms;
-				// -webkit-transition: all 1s linear;
-				// -moz-transition: all 1s linear;
-				// -o-transition: all 1s linear;
-				// transition: all 1s linear;
 			}
 
 			.listItemFooterNav {
-				height: 25px;
+				height: 27px;
 				transition: height 300ms;
+			}
+
+			.linkInListItemFooterNav {
+				padding-left: 15px;
 			}
 	  
 		  .footerContact {
