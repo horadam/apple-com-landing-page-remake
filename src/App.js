@@ -1,4 +1,3 @@
-// import './App.css';
 import Header from './components/Header';
 import AdBar from './components/AdBar'
 import FutureOfMac from './components/FutureOfMac'
