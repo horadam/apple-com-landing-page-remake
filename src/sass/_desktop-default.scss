@@ -187,7 +187,7 @@
 		background-color: black;
 	  }
 
-	  .smallChipInnerWrapper, .macAirImgWrapper, .macProInnerWrapper, .macProImgWrapper, .macMiniImgWrapper, .macMini {
+	  .smallChipInnerWrapper, .macAirImgWrapper, .macProImgWrapper, .macMiniImgWrapper, .macMini {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -267,18 +267,23 @@
 	  .macProImgWrapper {
 		background-image: url('../assets/macPro.jpg');
 		width: 1472px;
-		height: 540px;
+		height: 900px;
 		background-repeat: no-repeat;
 		background-position: center;
-		padding-bottom: 0;
-		margin-top: 100px;
+		background-position-y: top;
+		// padding-bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		// margin-top: 100px;
+		// padding-top: 200px;
 	  }
 	  
-		.macProInnerWrapper {
-			h3 {
-		  		margin-top: 0;
-			}
-		}
+		// .macProImgWrapper {
+		// 	h3 {
+		//   		margin-top: 0;
+		// 	}
+		// }
 	
 	/*----- MAC MINI -----*/  
 
