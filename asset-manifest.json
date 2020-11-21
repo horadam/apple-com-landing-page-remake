@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/apple-com-landing-page-remake/static/css/main.673c8297.chunk.css",
+    "main.css": "/apple-com-landing-page-remake/static/css/main.776c34f4.chunk.css",
     "main.js": "/apple-com-landing-page-remake/static/js/main.e594c405.chunk.js",
     "main.js.map": "/apple-com-landing-page-remake/static/js/main.e594c405.chunk.js.map",
     "runtime-main.js": "/apple-com-landing-page-remake/static/js/runtime-main.47671ab2.js",
@@ -10,14 +10,14 @@
     "static/js/3.da15b2e0.chunk.js": "/apple-com-landing-page-remake/static/js/3.da15b2e0.chunk.js",
     "static/js/3.da15b2e0.chunk.js.map": "/apple-com-landing-page-remake/static/js/3.da15b2e0.chunk.js.map",
     "index.html": "/apple-com-landing-page-remake/index.html",
-    "static/css/main.673c8297.chunk.css.map": "/apple-com-landing-page-remake/static/css/main.673c8297.chunk.css.map",
+    "static/css/main.776c34f4.chunk.css.map": "/apple-com-landing-page-remake/static/css/main.776c34f4.chunk.css.map",
     "static/js/2.886e035a.chunk.js.LICENSE.txt": "/apple-com-landing-page-remake/static/js/2.886e035a.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/apple-com-landing-page-remake/static/media/macProSmall.308c7ae3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.47671ab2.js",
     "static/js/2.886e035a.chunk.js",
-    "static/css/main.673c8297.chunk.css",
+    "static/css/main.776c34f4.chunk.css",
     "static/js/main.e594c405.chunk.js"
   ]
 }
