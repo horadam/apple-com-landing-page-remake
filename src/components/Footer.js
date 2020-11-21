@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Footer = () => {
+
+    const [ list1visible, setList1Visible ] = useState(false);
+
     return (
         <div className="footerWrapper">
             <div className="footer">
@@ -9,28 +12,42 @@ const Footer = () => {
                 </div>
                 <div className="footerNav">
                     <div className="footerNavColumn">
-                        <span className="footerNavLabel">
-                            Shop and Learn
-                        </span>
+                        <div className="footerNavLabel" onClick={() => setList1Visible(!list1visible)}>
+                            <span>
+                                Shop and Learn
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        {/* <div className={ list1visible ? "footerListWrapper" : "hiddenWrapper" }> */}
+                        <div className="footerListWrapper">
+                        {/* <ul class={ list1visible ? "listColumnFooterNav" : "hiddenUl" }> */}
                         <ul class="listColumnFooterNav">
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/mac/">Mac</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/ipad/">iPad</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/iphone/">iPhone</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/watch/">Watch</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/tv/">TV</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/music/">Music</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/airpods/">AirPods</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/homepod/">HomePod</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/ipod-touch/">iPod touch</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
-                            <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/mac/">Mac</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/ipad/">iPad</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/iphone/">iPhone</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/watch/">Watch</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/tv/">TV</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/music/">Music</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/airpods/">AirPods</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/homepod/">HomePod</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/ipod-touch/">iPod touch</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+                            <li class={ list1visible ? "listItemFooterNav" : "hidden" }><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></li>
                         </ul>
+                        </div>
                     </div>
                     <div className="footerNavColumn">
-                        <span className="footerNavLabel">
-                            Services
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                Services
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/apple-music/">Apple&nbsp;Music</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/apple-tv-plus/">Apple&nbsp;TV+</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/apple-fitness-plus/">Apple&nbsp;Fitness+</a></li>
@@ -42,20 +59,30 @@ const Footer = () => {
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/apple-books/">Apple&nbsp;Books</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/app-store/">App&nbsp;Store</a></li>
                         </ul>
-                        <span className="footerNavLabel">
-                            Account
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                Account
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://appleid.apple.com/us/">Manage Your Apple&nbsp;ID</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/account">Apple Store Account</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.icloud.com/">iCloud.com</a></li>
                         </ul>
                     </div>
-                    <div className="footerNavColumn">
-                        <span className="footerNavLabel">
-                            Apple Store
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavColumn">
+                        <div className="footerNavLabel">
+                            <span>
+                                Apple Store
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/retail/">Find a Store</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/shop">Shop Online</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
@@ -70,42 +97,67 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footerNavColumn">
-                        <span className="footerNavLabel">
-                            For Business
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                For Business
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                            <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/business/">Apple and Business</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/retail/business/">Shop for Business</a></li>
                         </ul>
-                        <span className="footerNavLabel">
-                            For Education
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                For Education
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/education/">Apple and Education</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/education/k12/how-to-buy/">Shop for K-12</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/educationrouting">Shop for College</a></li>
                         </ul>
-                        <span className="footerNavLabel">
-                            For Healthcare
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                For Healthcare
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/healthcare/">Apple in Healthcare</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/healthcare/apple-watch/">Health on Apple&nbsp;Watch</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/healthcare/health-records/">Health Records on iPhone</a></li>
                         </ul>
-                        <span className="footerNavLabel">
-                            For Government
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                For Government
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/r/store/government/">Shop for Government</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/us/shop/goto/eppstore/veteransandmilitary">Shop for Veterans and Military</a></li>
                         </ul>
                     </div>
-                    <div className="footerNavColumn">
-                        <span className="footerNavLabel">
-                            Apple Values
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavColumn">
+                        <div className="footerNavLabel">
+                            <span>
+                                Apple Values
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/accessibility/">Accessibility</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/education/connectED/">Education</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/environment/">Environment</a></li>
@@ -113,10 +165,15 @@ const Footer = () => {
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/privacy/">Privacy</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/supplier-responsibility/">Supplier Responsibility</a></li>
                         </ul>
-                        <span className="footerNavLabel">
-                            About Apple
-                        </span>
-                        <ul class="ac-gf-directory-column-section-list">
+                        <div className="footerNavLabel">
+                            <span>
+                                About Apple
+                            </span>
+                            <span className="plusSign">
+                                &#x2b;
+                            </span>
+                        </div>
+                        <ul class="listColumnFooterNav">
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/newsroom/">Newsroom</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/leadership/">Apple Leadership</a></li>
                             <li class="listItemFooterNav"><a class="linkInListItemFooterNav" href="https://www.apple.com/jobs/us/">Job Opportunities</a></li>
@@ -135,7 +192,7 @@ const Footer = () => {
                             Copyright © 2020 Apple Inc. All rights reserved.
                         </span>
                         <div className="policyLinks">
-                            <a href="https://apple.com">
+                            <a href="https://apple.com" id="firstPolicy">
                                 Privacy Policy
                             </a>
                             <a href="https://apple.com">
@@ -152,7 +209,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <span>
+                    <span className="usa">
                         <a href="https://apple.com">
                             United States
                         </a>

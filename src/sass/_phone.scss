@@ -1,0 +1,327 @@
+@media only screen and (max-width: 734px) {
+
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+
+
+/*-----BODY -----*/
+body {
+	font-size: 16px;
+  }
+
+/*-----HEADER -----*/
+.header {
+
+	height: 48px;
+
+	.headerText {
+		display: none;
+	  }
+	
+	  	#menuIcon {
+			display: inline;
+		}
+
+		#appleIcon {
+			font-size: 25px;
+		}
+
+		#searchIcon {
+			display: none;
+		}
+
+  }
+
+/*----- ADD BAR -----*/
+	  .adBar {
+
+		height: 260px;
+
+			h1 {
+				font-size: 25px;
+				margin-bottom: 5px;
+			}
+
+			span {
+				line-height: 150%;
+		 		width: 280px;
+				align-self: center;
+			}
+	  }
+
+/*----- MAIN -----*/
+.headline {
+	font-size: 40px;
+	font-weight: 500;
+	width: 300px;
+	text-align: center;
+	margin: 30px 0;
+  }
+  
+  .subhead {
+	font-size: 17px;
+	line-height: 160%;
+	width: 340px;
+	margin-bottom: 20px;
+  }
+  
+  .button {
+	padding:6px 30px;
+  }
+  
+  .seriesButton {
+	width: 120px;
+	height: 38px;
+	line-height: 35px;
+	margin: 0 5px;
+  }
+  
+  .availableStartingText {
+	font-size: 19px;
+  }
+
+  .smallChipInnerWrapper, .macAirImgWrapper, .macProInnerWrapper, .macProImgWrapper, .macMiniImgWrapper {
+	padding-bottom: 90px;
+  }
+
+/*----- FUTURE OF MAC -----*/  
+  .futureOfMac {
+	height: 700px;
+	width: 100%;
+	background-image: url('../assets/appleLogoBackgroundSmall.jpg');
+	padding-bottom: 70px;
+
+	h3 {
+		font-size: 22px;
+		width: 340px;
+	  }
+
+	.headline {
+		display: flex;
+		flex-direction: column;
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+  }
+
+  /*----- SMALL CHIP -----*/  
+
+  .smallChip {
+
+		.m1Img {
+			height: 88px;
+			width: 88px;
+			background-image: url('../assets/m1ChipOnlySmall.jpg');
+		}
+		
+		.smallChipInnerWrapper {
+			background-image: url('../assets/m1chipSmall.jpg');
+			width: 734px;
+			height: 400px;
+			background-size: auto;
+			background-position: center;
+			background-position-y: top;
+		}
+
+			.headline {
+				font-size: 50px;
+				padding: 0;
+				width: 250px;
+			}
+
+			.subhead {
+				width: 420px;
+			}
+
+			.button {
+				padding: 6px 20px;
+			}
+	}
+
+/*----- MAC AIR -----*/  
+	.macAir {
+
+		.macAirImgWrapper {
+			width: 100%;
+			height: 530px;
+			background-image: url('../assets/macAirSmall.jpg');
+			// background-repeat: no-repeat;
+			// background-position: center;
+			background-position-y: -90px;
+		}
+
+		.headline {
+			margin-bottom: 15px;
+			// padding: 0;
+		}
+
+		.subhead {
+			width: 400px;
+			margin-top: 0;
+			margin-bottom: 7px;
+		}
+	}
+
+	/*----- MAC PRO -----*/  
+	.macPro {
+		height: 560px;
+
+		.macProImgWrapper {
+			background-image: url('../assets/macProSmall.jpg');
+			width: 100%;
+			height: 270px;
+			// background-repeat: no-repeat;
+			// background-position: center;
+			background-position-y: -90px;
+			padding-bottom: 15px;
+			margin-top: 0;
+
+		}
+
+		.headline {
+			margin: 0;
+		}
+
+		.subhead {
+			margin-top: 0;
+			margin-bottom: 7px;
+			width: 450px;
+		}
+
+	}
+
+	/*----- MAC MINI -----*/  
+
+	.macMini {
+		height: 650px;
+		position: relative;
+
+		.macMiniImgWrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			background-image: url('../assets/macMiniSmall.jpg');
+			background-position-y: -105px;
+			width: 100%;
+			height: 400px;
+			padding-top: 600px;
+
+			.subhead {
+				margin-bottom: 7px;
+				width: 450px;
+			}
+		}
+	}
+
+/*----- FOOTER -----*/
+	  
+		  .footerNav {
+			flex-direction: column;
+			padding-bottom: 3px;
+		  }
+	  
+			.footerNavColumn {
+			  width: 100%;
+			}
+	  
+			.footerNavLabel {
+				display: flex;
+				justify-content: space-between;
+			  	font-weight: normal;
+				  cursor: pointer;
+				  border-bottom: $borderGrey;
+				  padding: 10px 5px 10px 0;
+			}
+
+			.plusSign {
+				display: inline;
+			}
+
+	  
+			.listColumnFooterNav {
+				display: none;
+			//   list-style: none;
+			//   padding: 0;
+			//   line-height: 25px;
+			//   border-bottom: 1px solid rgb(66, 66, 69);
+			// //   height: 300px;
+			// //   transition: 1000ms ease-in;
+			// 	margin-top: 0;
+			// 	transition: margin-top 1000ms;
+			// 	overflow: hidden;
+			}
+
+			.fotterListWrapper {
+				padding-bottom: 0px;
+				transition: padding-bottom 1000ms;
+				display: none;
+			}
+
+			.hiddenWrapper {
+				height: 1px;
+				overflow: hidden;
+				border-bottom: $borderGrey;
+				margin-bottom: 10px;
+				padding-bottom: 150px;
+			}
+
+			.hiddenUl {
+				margin-top: -150px;
+				overflow: none;
+				// transition: padding-bottom 1000ms;
+			}
+
+			.hidden {
+				height: 0px;
+				overflow: hidden;
+				// border-bottom: 1px solid rgb(66, 66, 69);
+				// padding-bottom: 30px;
+				// transition: top 1000ms;
+				// -webkit-transition: all 1s linear;
+				// -moz-transition: all 1s linear;
+				// -o-transition: all 1s linear;
+				// transition: all 1s linear;
+			}
+
+			.listItemFooterNav {
+				height: 25px;
+				transition: height 300ms;
+			}
+	  
+		  .footerContact {
+			border-bottom: none;
+			// padding: 10px 0;
+			width: 380px;
+		  }
+	  
+		  .footerTermsBar {
+			flex-direction: column;
+			padding-bottom: 0;
+		  }
+	  
+		  .footerTermsBarLeft {
+			flex-direction: column !important;
+		  }
+
+		  	.copyright {
+				  margin-bottom: 8px;
+				  font-size: 11px;
+			  }
+	  
+			.policyLinks {
+			  justify-content: flex-start;
+				margin: 0;
+			}
+
+			  #firstPolicy {
+				  padding-left: 0;
+			  }
+
+		.usa {
+			order: -1;
+			margin-bottom: 18px;
+		}
+
+}

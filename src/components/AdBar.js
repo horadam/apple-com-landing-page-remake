@@ -3,12 +3,18 @@ import React from 'react'
 const AdBar = () => {
     return (
         <div className="adBar">
-                <span className="addBarText">
-                        <a href="https://www.apple.com/shop" className="link">
-                            Shop early online
-                        </a>
-                        &nbsp;to get all your gifts in time for the holidays. And get Specialist help, free no‑contact delivery, and more.
-                </span>
+                <div className="emptyAdBarRollup"></div>
+                <div className="addBarText">
+                    <h1>
+                        Here's to the brave ones.
+                    </h1>
+                    <span>
+                        We’re proud to honor America’s veterans and service members this Veterans Day and every day.
+                    </span>
+                    <a href="https://www.apple.com/shop" id="adBarLink">
+                        Shop with Veterans and Military discount &gt;
+                    </a>
+                </div>
         </div>
     )
 }

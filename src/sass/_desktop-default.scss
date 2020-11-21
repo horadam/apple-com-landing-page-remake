@@ -1,0 +1,438 @@
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	html,body
+	{
+		width: 100%;
+		margin-top: 22px;
+		padding: 0px;
+		overflow-x: hidden; 
+	}
+
+    body {
+		box-sizing: border-box;
+		pointer-events: all;
+		font-size: 21px;
+		line-height: 1.381;
+		font-weight: 400;
+		letter-spacing: .011em;
+		background-color: black;
+		color: white;
+	  }
+	//   *,* ::after, *::before {
+	// 	  box-sizing: inherit;
+	//   }
+ 
+	  /*-----HEADER -----*/
+	  .header {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		background-color: black;
+		opacity: 0.9;
+		height: 44px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		.headerInner {
+			width: 100%;
+			max-width: 1020px;
+			height: 100%;
+			padding: 0 20px 0 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		  }
+		  
+		  .headerIcon {
+			color: rgb(214, 214, 214);
+			font-size: 22px;
+		  }
+		  
+		  .headerText {
+			color: rgb(214, 214, 214);
+			font-size: 14px;
+		  }
+		  
+		  .headerIcon:hover, .headerText:hover {
+			color: white;
+			cursor: pointer;
+		  }
+	
+			  #menuIcon {
+				display: none;
+			}
+	
+			#searchIcon {
+				display: block;
+			}
+		
+	  }
+	  
+	/*----- ADD BAR -----*/  
+	  .adBar {
+		display: flex;
+		flex-direction: column;
+		height: 215px;
+		text-align: center;
+		font-size: 14px;
+		overflow: hidden;
+		background-color: rgb(31,31,31);
+	  }
+	  
+		.emptyAdBarRollup {
+		  height: 20px;
+		  background-color: black;
+		}
+	  
+		.addBarText {
+		  display: flex;
+		  flex-direction: column;
+		  justify-self: flex-end;
+		  margin-top: 50px;
+		  padding: 0 30px 0 30px;
+		  color: white;
+		}
+	  
+		.addBarText > h1 {
+		  font-size: 33px;
+		  font-weight: 550;
+		  margin-bottom: 0;
+		}
+	  
+		.addBarText > span {
+		  margin-bottom: 10px;
+		  font-size: 17px;
+		  width: auto;
+		}
+	  
+	  #adBarLink {
+		text-decoration: none;
+		color: rgb(36, 125, 219);
+		font-size: 17px;
+		padding: 0;
+	  }
+	  
+		#adBarLink:hover {
+		  text-decoration: underline;
+		  color: rgb(34, 120, 212);
+		}
+	
+	/*----- MAIN -----*/
+	  .headline {
+		font-size: 80px;
+		line-height: 1.06;
+		font-weight: 500;
+		letter-spacing: -.01em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 700px;
+		text-align: center;
+		margin: 30px 0;
+	  }
+	  
+	  .subhead {
+		font-size: 22px;
+		font-weight: 400;
+		width: 740px;
+		text-align: center;
+	  }
+	  
+	  .button, .seriesButton {
+		background: none;
+		color: inherit;
+		border: solid 1px white;
+		border-radius: 25px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 16px;
+	  
+	  }
+	  
+	  .button {
+		padding: 15px 35px;
+	  }
+	  
+	  .seriesButton {
+		width: 150px;
+		height: 55px;
+		text-align: center;
+		line-height: 48px;
+		margin: 0 10px;
+	  }
+	  
+	  .button:hover, .seriesButton:hover {
+		background-color: white;
+		color: black;
+		transition: background-color 800ms;
+	  }
+	  
+	  .twoButtonsWrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	  }
+	  
+	  .availableStartingText {
+		color: rgb(99, 99, 104);
+		text-align: center;
+		margin-top: 0;
+	  }
+	  
+	  .futureOfMac, .smallChip, .macAir, .macPro, .macMini {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: black;
+	  }
+
+	  .smallChipInnerWrapper, .macAirImgWrapper, .macProInnerWrapper, .macProImgWrapper, .macMiniImgWrapper, .macMini {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding-bottom: 60px;
+	  }
+	  
+	  /*----- FUTURE OF MAC -----*/  
+	  .futureOfMac {
+		width: 100%;
+		height: 900px;
+		background-image: url('../assets/appleLogoBackground.jpg');
+		background-position: center;
+		background-position-y: top;
+		justify-content: flex-end;
+		padding-bottom: 60px;
+
+		h3 {
+			width: 580px;
+			margin-top: 0;
+		  }
+
+		.headline {
+			// font-size: 45px;
+			// font-weight: 600;
+			// display: inline;
+			width: 500px;
+			// flex-direction: column;
+		}
+	  }
+	  
+	  /*----- SMALL CHIP -----*/  
+	  .smallChip {
+
+		.m1Img {
+			height: 98px;
+			width: 98px;
+			background-image: url('../assets/m1ChipOnlyLarge.jpg');
+			background-size: contain;
+			margin-top: 60px;
+		}
+		
+		.smallChipInnerWrapper {
+			background-image: url('../assets/chipLarge.jpg');
+			width: 1472px;
+			height: 510px;
+			background-size: 1472px 510px;
+			background-repeat: no-repeat;
+		}
+
+		.headline {
+			width: 100%;
+		}
+
+		.subhead {
+			width:800px;
+		}
+	  }
+	  
+	/*----- MAC AIR -----*/  
+
+	  .macAirImgWrapper {
+		width: 1472px;
+		height: 900px;
+		background-image: url('../assets/macAirLarge.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		.headline {
+			margin: 0;
+		}
+
+		.subhead {
+			width: 700px;
+			margin-bottom: 15px;
+		}
+	  }
+	  
+	/*----- MAC PRO -----*/  
+
+	  .macProImgWrapper {
+		background-image: url('../assets/macPro.jpg');
+		width: 1472px;
+		height: 540px;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-bottom: 0;
+		margin-top: 100px;
+	  }
+	  
+		.macProInnerWrapper {
+			h3 {
+		  		margin-top: 0;
+			}
+		}
+	
+	/*----- MAC MINI -----*/  
+
+	.macMini {
+
+	  .macMiniImgWrapper {
+		background-image: url('../assets/macMini.jpg');
+		background-position: center;
+		width: 1472px;
+		height: 820px;
+		background-repeat: no-repeat;
+		padding-bottom: 0;
+	  }
+	  
+		.headline, .subhead {
+		  margin-top: 0;
+		}
+
+		.headline {
+			margin-bottom: 15px;
+		}
+
+		.subhead {
+			width: 800px;
+		}
+	}
+
+	/*----- FOOTER -----*/
+
+	  .footerWrapper {
+		width: 100%;
+		background-color: rgb(29, 29, 31);
+		display: flex;
+		justify-content: center;
+	  }
+	  
+		.footer {
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: flex-start;
+		  width: 1020px;
+		  font-size: 12px;
+		  color: rgb(105, 105, 110);
+		  padding: 20px 20px;
+		}
+	  
+		  .footerBatteryInfo {
+			padding-bottom: 20px;
+			border-bottom: $borderGrey;
+		  }
+	  
+		  .footer a {
+			text-decoration: none;
+			outline: none;
+			color: rgb(151, 151, 156);
+		  }
+	  
+		  .footer a:hover {
+			text-decoration: underline;
+			color: white;
+		  }
+	  
+		  .footerNav {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			width: 100%;
+			color: rgb(150, 150, 155);
+			padding: 20px 0;
+		  }
+	  
+			.footerNavColumn {
+			  width: 20%;
+			  /* padding: 10px; */
+			}
+	  
+			.footerNavLabel {
+			  font-weight: bold;
+			  color: white;
+			}
+
+			.plusSign {
+				display: none;
+			}
+	  
+			.footerNav ul {
+			  list-style: none;
+			  padding: 0;
+			  line-height: 25px;
+			  border-bottom: none;
+
+			}
+	  
+		  .footerContact {
+			border-bottom: $borderGrey;
+			padding: 10px 0;
+			width: 100%;
+		  }
+	  
+		  .footerContact a {
+			color: rgb(44, 144, 250);
+		  }
+	  
+		  .footerContact a:hover {
+			text-decoration: underline;
+			color: rgb(34, 127, 228);
+		  }
+	  
+		  .footerTermsBar {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 10px 0;
+
+			.footerTermsBarLeft {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			  }
+		  }
+
+		  	.copyright {
+				margin-bottom: 0;
+				margin-right: 20px;
+			}
+	  
+			.policyLinks {
+			  display: flex;
+			  flex-direction: row;
+			  justify-content: space-evenly;
+			  margin: 0 25px;
+			  height: 15px;
+			}
+	  
+			  .policyLinks > a {
+				padding: 0 10px;
+				border-right: $borderGrey;
+			  }
+	  
+			  a.noBorder {
+				border: none;
+			  }
+
+			.usa {
+				order: 2;
+				margin-bottom: none;
+			}
+
+
+

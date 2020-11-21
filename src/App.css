@@ -1,15 +1,22 @@
-.App {
-    box-sizing: border-box;
+/* .App {
+    
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+body {
+  box-sizing: border-box;
     pointer-events: all;
     font-size: 21px;
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: .011em;
-    /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: black;
+  width: 100%;
 }
 *,* ::after, *::before {
     box-sizing: inherit;
 }
+
+
 
 /* .main {
   pointer-events: all;
@@ -24,8 +31,8 @@
   z-index: 1;
   top: 0;
   /* color: white; */
-  background-color: rgb(51, 51, 51);
-  opacity: 0.98;
+  background-color: black;
+  opacity: 0.9;
   height: 44px;
   width: 100%;
   display: flex;
@@ -59,23 +66,52 @@
 }
 
 .adBar {
-  height: 44px;
+  display: flex;
+  flex-direction: column;
+  height: 215px;
   text-align: center;
   font-size: 14px;
-  padding: 0 30px 0 30px;
   overflow: hidden;
-  line-height: 44px;
+  background-color: rgb(31,31,31);
 }
 
-.link {
+  .emptyAdBarRollup {
+    height: 20px;
+    background-color: black;
+  }
+
+  .addBarText {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    margin-top: 50px;
+    /* justify-content: flex-end; */
+    padding: 0 30px 0 30px;
+    color: white;
+  }
+
+  .addBarText > h1 {
+    font-size: 33px;
+    font-weight: 550;
+    margin-bottom: 0;
+  }
+
+  .addBarText > span {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+#adBarLink {
   text-decoration: none;
-  color: rgb(0, 91, 197);
+  color: rgb(36, 125, 219);
+  font-size: 17px;
+  padding: 0;
 }
 
-.link:hover {
-  text-decoration: underline;
-  color: rgb(0, 91, 197);
-}
+  #adBarLink:hover {
+    text-decoration: underline;
+    color: rgb(34, 120, 212);
+  }
 
 .headline {
   font-size: 80px;

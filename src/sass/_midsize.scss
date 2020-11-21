@@ -1,0 +1,143 @@
+@media only screen and (min-width: 735px) and (max-width: 1068px){
+   
+/*----- ADD BAR -----*/  
+.adBar {
+	height: 235px;
+
+      
+    .addBarText {
+        h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        span{
+            width: 400px;
+            align-self: center;
+        }
+      }
+}
+
+/*----- MAIN -----*/
+.headline {
+    font-size: 65px;
+    font-weight: 450;
+    letter-spacing: -.01em;
+    margin: 15px 0;
+  }
+
+.subhead {
+    font-size: 21px;
+}
+
+.button {
+    padding: 12px 28px;
+  }
+
+.seriesButton {
+    width: 130px;
+    height: 48px;
+    line-height: 44px;
+    margin: 0 7px;
+}
+
+/*----- FUTURE OF MAC -----*/  
+
+.futureOfMac {
+    height: 855px;
+    background-image: url('../assets/appleLogoBackground.jpg');
+  }
+
+/*----- SMALL CHIP -----*/  
+
+.smallChip {
+
+    .headline {
+        width: 400px;
+    }
+
+    .smallChipInnerWrapper {
+        background-image: url('../assets/m1chipMedium.jpg');
+        width: 1000px;
+        height: 450px;
+        background-size: 100%;
+        background-position: center;
+        background-position-y: 20px;
+    }
+
+    .subhead {
+        width:750px;
+        margin-top: 0;
+    }
+}
+
+/*----- MAC AIR -----*/  
+
+.macAirImgWrapper {
+    width: 1000px;
+    height: 700px;
+    background-image: url('../assets/macAirMedium.jpg');
+    background-position-y: 60px;
+
+    .headline {
+        margin: 0;
+    }
+
+    .subhead {
+        width: 600px;
+        margin-bottom: 15px;
+    }
+  }
+
+/*----- MAC PRO -----*/  
+
+.macProImgWrapper {
+    background-image: url('../assets/macProMedium.jpg');
+    width: 1000px;
+    height: 450px;
+    background-position-y: -20px;
+    margin: 0;
+  }
+  
+    .macProInnerWrapper {
+        .subhead {
+            width: 600px;
+        }
+    }
+
+/*----- MAC MINI -----*/  
+
+.macMini {
+
+    .macMiniImgWrapper {
+        background-image: url('../assets/macMiniMedium.jpg');
+        background-position: center;
+        width: 1472px;
+        height: 820px;
+        background-repeat: no-repeat;
+        padding-bottom: 0;
+    }
+
+    .subhead {
+        width: 700px;
+    }
+}
+
+    /*----- FOOTER -----*/ 
+    .footer {
+        .footerTermsBarLeft {
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+
+    .policyLinks {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    #firstPolicy {
+        padding-left: 0;
+        }
+    }
+
+}
