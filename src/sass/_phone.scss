@@ -216,10 +216,15 @@ body {
 	}
 
 /*----- FOOTER -----*/
-	  
+	  .footer {
+		  padding: 20px 0;
+		  margin-left: 3vw;
+			margin-right: 3vw;
+	  }
 		  .footerNav {
 			flex-direction: column;
 			padding-bottom: 3px;
+			
 		  }
 	  
 			.footerNavColumn {
