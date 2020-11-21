@@ -118,7 +118,9 @@ body {
 		
 		.smallChipInnerWrapper {
 			background-image: url('../assets/m1chipSmall.jpg');
-			width: 734px;
+			width: 100vw;
+			padding-left: 10vw;
+			padding-right: 10vw;
 			height: 400px;
 			background-size: auto;
 			background-position: center;
@@ -132,7 +134,7 @@ body {
 			}
 
 			.subhead {
-				width: 60%;
+				width: 85vw;
 			}
 
 			.button {
@@ -147,14 +149,11 @@ body {
 			width: 100%;
 			height: 530px;
 			background-image: url('../assets/macAirSmall.jpg');
-			// background-repeat: no-repeat;
-			// background-position: center;
 			background-position-y: -90px;
 		}
 
 		.headline {
 			margin-bottom: 15px;
-			// padding: 0;
 		}
 
 		.subhead {
@@ -172,8 +171,6 @@ body {
 			background-image: url('../assets/macProSmall.jpg');
 			width: 100%;
 			height: 270px;
-			// background-repeat: no-repeat;
-			// background-position: center;
 			background-position-y: -90px;
 			padding-bottom: 15px;
 			margin-top: 0;
@@ -219,8 +216,8 @@ body {
 	  .footer {
 		  width: 100vw;
 		  padding: 20px 0;
-		  margin-left: 3vw;
-			margin-right: 3vw;
+		  padding-left: 3vw;
+			padding-right: 3vw;
 	  }
 		  .footerNav {
 			flex-direction: column;
