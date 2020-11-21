@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/apple-com-landing-page-remake/static/css/main.f9e33337.chunk.css",
-    "main.js": "/apple-com-landing-page-remake/static/js/main.7895561e.chunk.js",
-    "main.js.map": "/apple-com-landing-page-remake/static/js/main.7895561e.chunk.js.map",
-    "runtime-main.js": "/apple-com-landing-page-remake/static/js/runtime-main.e8ec31b2.js",
-    "runtime-main.js.map": "/apple-com-landing-page-remake/static/js/runtime-main.e8ec31b2.js.map",
-    "static/js/2.58be5cce.chunk.js": "/apple-com-landing-page-remake/static/js/2.58be5cce.chunk.js",
-    "static/js/2.58be5cce.chunk.js.map": "/apple-com-landing-page-remake/static/js/2.58be5cce.chunk.js.map",
-    "static/js/3.64267f82.chunk.js": "/apple-com-landing-page-remake/static/js/3.64267f82.chunk.js",
-    "static/js/3.64267f82.chunk.js.map": "/apple-com-landing-page-remake/static/js/3.64267f82.chunk.js.map",
+    "main.css": "/apple-com-landing-page-remake/static/css/main.ef845137.chunk.css",
+    "main.js": "/apple-com-landing-page-remake/static/js/main.18c657f3.chunk.js",
+    "main.js.map": "/apple-com-landing-page-remake/static/js/main.18c657f3.chunk.js.map",
+    "runtime-main.js": "/apple-com-landing-page-remake/static/js/runtime-main.47671ab2.js",
+    "runtime-main.js.map": "/apple-com-landing-page-remake/static/js/runtime-main.47671ab2.js.map",
+    "static/js/2.94422fee.chunk.js": "/apple-com-landing-page-remake/static/js/2.94422fee.chunk.js",
+    "static/js/2.94422fee.chunk.js.map": "/apple-com-landing-page-remake/static/js/2.94422fee.chunk.js.map",
+    "static/js/3.da15b2e0.chunk.js": "/apple-com-landing-page-remake/static/js/3.da15b2e0.chunk.js",
+    "static/js/3.da15b2e0.chunk.js.map": "/apple-com-landing-page-remake/static/js/3.da15b2e0.chunk.js.map",
     "index.html": "/apple-com-landing-page-remake/index.html",
-    "static/css/main.f9e33337.chunk.css.map": "/apple-com-landing-page-remake/static/css/main.f9e33337.chunk.css.map",
-    "static/js/2.58be5cce.chunk.js.LICENSE.txt": "/apple-com-landing-page-remake/static/js/2.58be5cce.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/apple-com-landing-page-remake/static/media/macPro.62832eee.jpg"
+    "static/css/main.ef845137.chunk.css.map": "/apple-com-landing-page-remake/static/css/main.ef845137.chunk.css.map",
+    "static/js/2.94422fee.chunk.js.LICENSE.txt": "/apple-com-landing-page-remake/static/js/2.94422fee.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/apple-com-landing-page-remake/static/media/macProSmall.308c7ae3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8ec31b2.js",
-    "static/js/2.58be5cce.chunk.js",
-    "static/css/main.f9e33337.chunk.css",
-    "static/js/main.7895561e.chunk.js"
+    "static/js/runtime-main.47671ab2.js",
+    "static/js/2.94422fee.chunk.js",
+    "static/css/main.ef845137.chunk.css",
+    "static/js/main.18c657f3.chunk.js"
   ]
 }
